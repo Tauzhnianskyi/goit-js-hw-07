@@ -45,7 +45,9 @@ function onClick(evt) {
   function closeModal(evt) {
     if (evt.which === "27") {
       instance.close();
+      gallery.removeEventListener("click", onClick);
     }
     instance.close();
   }
+  console.log(currentImg);
 }
